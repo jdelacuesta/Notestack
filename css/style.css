@@ -2,11 +2,11 @@
    overflow-x: hidden;
  }
  body {
-   font-family: "Work-Sans", Helvetica, Arial, sans-serif;
+   font-family: "Roboto", Helvetica, Arial, sans-serif;
    color:#333333;
  }
  h1, h2, h3, h4, h5, h6 {
-   font-family: "Roboto", Helvetica, Arial, sans-serif;
+   font-family: "Work-Sans", Helvetica, Arial, sans-serif;
  }
  h2 {
    font-size:28px;
@@ -67,12 +67,13 @@
    margin:0 2% 20px;
  }
  
- @media (min-width: 768px) {
+ @media screen and (min-width: 768px) {
    .container {
      width: 750px;
    }
+ }
  
- @media (min-width: 992px) {
+ @media screen and (min-width: 992px) {
    .container {
      width: 970px;
    }
@@ -86,22 +87,26 @@
      width:21%;
    }
  }
- @media (min-width: 1200px) {
+ @media screen and (min-width: 1200px) {
    .container {
      width: 1170px;
    }
- @media (min-width: 1824px) {
+ }
+ @media screen and (min-width: 1824px) {
    .container {
       width: 1824px;
    }
  } 
+
  
   /* HEADER */
  header {
    color:#FFFFFF;
-   background: #34495E;
-   background-image: linear-gradient(206deg, #5F81A3 0%, #34495E 94%);
- }
+   background: url('../images/dashboard.png') top left no-repeat;
+   background-size:cover;
+   width: 100%;
+   height:100vh;
+}
  header nav {
    padding:1em 0;
  }
@@ -118,29 +123,31 @@
  }
  header nav ul > li.btn-outline {
    padding:10px 15px;
-   border:2px solid #FFFFFF;
+   border:2px solid #000;
    border-radius: 4px;
  }
  header nav ul > li.btn-outline:hover {
-   background:#FFFFFF;
+   background:#000;
  }
  header nav ul > li > a {
-   color:#FFFFFF;
+   color:#000;
    text-decoration: none;
  }
  header nav ul > li.btn-outline:hover > a {
-   color:#34495E;
+   color:#fff;
 
  }
   header .hero {
-   text-align: center;
+   text-align: left;
    display:block;
    position: relative;
+   width: 60%;
  }
  header .hero h1 {
    font-size:48px;
    font-weight: normal;
    margin:95px 0 0;
+   color: #B56736;
  }
  header .hero p {
    font-size: 22px;
@@ -159,16 +166,32 @@
    font-weight: 700;
    text-decoration: none;
    padding:10px 30px;
-   background: #2ECC71;
-   border: 2px solid #2ECC71;
-   box-shadow: 0px 2px 0px 0px #22894E;
+   background: #B56736;
  }
 
   /* BENEFITS */
- .benefits {
+ .notes, .images, .links {
    text-align: center;
    display:block;
    position:relative;
+ }
+ .notes {
+  background: url('../images/') top center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height:600px;
+ }
+ .images {
+  background: url('../images/') top center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height:600px;
+ }
+ .links {
+  background: url('../images/') top center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height:600px;
  }
  .benefits ul {
    margin: 0 auto;
