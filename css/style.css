@@ -177,7 +177,24 @@
   background: url('../images/Section 3 - Background.png') top center no-repeat;
   background-size: cover;
   width: 100%;
-  height:600px;
+  height:500px;
+ }
+ .links .container {
+  height: 100%;
+ }
+ .links .one-half {
+  height: 100%;
+  position: relative;
+  text-align: center;
+  bottom: 0;
+ }
+ .links .one-half i {
+  margin-top:  200px;
+ }
+ .links .one-half img {
+  position: absolute;
+  left: 30%;
+  bottom: 0;
  }
  .benefits ul {
    margin: 0 auto;
@@ -198,46 +215,52 @@
  }
   /* TESTIMONIALS */
  .testimonials {
-   background: url('../images/Content_4.png') top center no-repeat;
+   background: url('../images/Section 4 - background.png') top center no-repeat;
    background-size: cover;
-   width: 120%;
-   height:700px;
-   padding:4em 0;
+   width: 100%;
+   height:600px;
+   padding:12em 0 0em;
    text-align: center;
  }
  .testimonials h2 {
    color:#B56736;
  }
+ .testimonials ul {
+  padding:0;
+ }
  .testimonials ul li {
    list-style-type: none;
    width:40%;
    margin: 0 auto;
-   background: rgba(216,216,216, 0.51);
    border-radius: 3px;
    padding: 5px;
  }
  .testimonials blockquote {
    color:#000000;
+   background: rgba(216,216,216, 0.51);
    text-align: center;
    position: relative;
    padding:30px;
    width:auto;
    margin:0;
  }
-  .testimonials img {
+ .testimonials .byline {
+  margin:0 auto;
+  display:block;
+ }
+  .testimonials .byline img {
    height: 65px;
    width: 65px;
    border-radius:50%;
-   float: left;
    display: inline-block;
    margin:20px 10px 0 0;
  }
- .testimonials p.name {
-   float: left;
-   display: inline-block;
+ .testimonials .byline p.name {
    text-align: left;
+   display: inline-block;
    font-size:13px;
-   margin-top: 30px;
+   position: relative;
+   top:-15px;
  }
 
  /* FOOTER */
@@ -252,7 +275,7 @@
    z-index: 0;
  }
  footer p, footer nav ul {
-   font-size:14px;
+   font-size:12px;
    font-weight:100;
    text-align: center;
    margin: 10px auto 0;
@@ -353,13 +376,19 @@
   background-image: linear-gradient(-180deg, #B2B2B2 0%, #7A7A7A 100%);
   padding: 26px;
   display:inline-block;
+  float: left;
  }
  .center-nav .items {
   display: inline-block;
-  width: auto;
+  width: 52%;
   text-align: center;
-  padding:0 6%;
+  padding:40px 6%;
   color: #FFFFFF;
+  height: 10px;
+  top:0;
+  position: relative;
+  float: left;
+
  }
  .center-nav .items ul {
   padding: 0;
